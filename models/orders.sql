@@ -43,7 +43,8 @@ final as (
 
         {% endfor -%}
 
-        order_payments.total_amount as amount
+        order_payments.total_amount as amount,
+        current_timestamp as _loaded_at
 
     from orders
 
